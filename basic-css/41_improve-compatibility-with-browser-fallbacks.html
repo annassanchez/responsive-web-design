@@ -1,0 +1,13 @@
+<style>
+/* si aparecen problemas de incompatibilidad, se puede el mismo elemento para prevenir los fallos */
+  :root {
+    --red-color: red;
+  }
+  .red-box {
+    background: red;
+    background: var(--red-color);
+    height: 200px;
+    width:200px;
+  }
+</style>
+<div class="red-box"></div>
