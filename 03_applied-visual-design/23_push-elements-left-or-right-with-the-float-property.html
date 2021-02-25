@@ -1,0 +1,31 @@
+<head>
+  <style>
+    /*la siguiente herramienta de posicionamiento no usa position, pero utiliza la propiedad float de un elemento. Elementos float son reemplazados del funcionamiento habitual de la página y movidos a la izda o dcha del elemento progenitor que los contiene. se usan con la propiedad width para especificar cuanto espacio necesita el elemento float.
+    para utilizarlo, se pone el elemento float + la posición (left, right, top, bottom) dentro de cada clase, etiqueta...*/
+    #left {
+      float: left;
+      width: 50%;
+    }
+    #right {
+      float: right;
+      width: 40%;
+    }
+    aside, section {
+      padding: 2px;
+      background-color: #ccc;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Welcome!</h1>
+  </header>
+  <section id="left">
+    <h2>Content</h2>
+    <p>Good stuff</p>
+  </section>
+  <aside id="right">
+    <h2>Sidebar</h2>
+    <p>Links</p>
+  </aside>
+</body>

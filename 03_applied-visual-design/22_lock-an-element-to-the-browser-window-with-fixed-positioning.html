@@ -1,0 +1,37 @@
+<style>
+  /*aparte de relative o absolute, la posición de un elemento también puede ser fixed; así, se le da una posicionamiento absoluto que bloquea el elemento con relación a la ventana del buscador. similar al posicionamiento absoluto, se usa con las opcions de CSS offset y puede eliminar al elemento del flow del documento. otros elementos no se posicionan donde deberían, por lo que habrá que ajustar el layout.
+  la diferencia entre fixed y absolute es que un elemento fijado no se moverá con el scrolling*/
+  body {
+    min-height: 150vh;
+  }
+  #navbar {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    background-color: #767676;
+  }
+  nav ul {
+    margin: 0px;
+    padding: 5px 0px 5px 30px;
+  }
+  nav li {
+    display: inline;
+    margin-right: 20px;
+  }
+  a {
+    text-decoration: none;
+  }
+</style>
+<body>
+  <header>
+    <h1>Welcome!</h1>
+    <nav id="navbar">
+      <ul>
+        <li><a href="">Home</a></li>
+        <li><a href="">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <p>I shift up when the #navbar is fixed to the browser window.</p>
+</body>

@@ -1,0 +1,22 @@
+<style>
+  /*otra opción para mover elementos dentro del css es absolute. frente a relative, quita al elemento del flow del documento, de forma que el resto de los elementos lo ignoran. las opciones del css offset (bottom, top, left, right) se utilizan para ajustar esa posición.
+  con el posicionamiento absolute, el elemento estará fijado con respecto al elemento ancestro más cercano; por tanto, si no se establece un elemento de parentesco (normalment con position: relative), seguirá subiendo hasta que llegue al elemento <body>)*/
+  #searchbar {
+    position: absolute;
+    top: 50px;
+    right: 50px;
+  }
+  section {
+    position: relative;
+  }
+</style>
+<body>
+  <h1>Welcome!</h1>
+  <section>
+    <form id="searchbar">
+      <label for="search">Search:</label>
+      <input type="search" id="search" name="search">
+      <input type="submit" name="submit" value="Go!">
+    </form>
+  </section>
+</body>
