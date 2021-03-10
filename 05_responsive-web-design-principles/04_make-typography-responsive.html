@@ -1,0 +1,14 @@
+<!--for making a responsible typography, instead of using em or px to specify text size, viewport units can be used. these units are like percentage, but based on different items -- relatively based on viewport dimensions that are relative to the size of the container element. there are four different viewport units:
+-vw: 10vw are 10% if the viewport's width.
+-vh: 3vh is 3% of the viewport's height.
+-vmin: 70vmin would be the 70% of the viewport's smaller version (height or width)
+-vmax: 100vmax would be the 100% of the viewport's bigger version (height or width)-->
+<style>
+h2 {
+  width: 80vw;  
+}
+p{ width: 75vmin; }
+</style>
+
+<h2>Importantus Ipsum</h2>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis tempus massa. Aenean erat nisl, gravida vel vestibulum cursus, interdum sit amet lectus. Sed sit amet quam nibh. Suspendisse quis tincidunt nulla. In hac habitasse platea dictumst. Ut sit amet pretium nisl. Vivamus vel mi sem. Aenean sit amet consectetur sem. Suspendisse pretium, purus et gravida consequat, nunc ligula ultricies diam, at aliquet velit libero a dui.</p>
