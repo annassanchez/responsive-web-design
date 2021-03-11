@@ -1,0 +1,31 @@
+<style>
+  /*flex items in a flex contariner sometimes don't fill all the space -- you can tell CSS how to align and space out the flex items.
+  -justify-content: center; sets the elements in the center, no need to occupy the full container.
+  -flex-end: alings the items to the end of the container. in a row, pushes the elements to the right. in a column, pushes the elements to the bottom part of the container.
+  -flex-start: alings the items to the dtart of the container. in a row, pushes the elements to the left. in a column, pushes the elements to the top part of the container.
+  -space-between: aligns the items to the center of the main axis. the first and the la elemenets are pushed to the edges of the container. 
+  -space-around: similar to space-between, byr the first and last item are not in the edge of the container but distributed around it
+  -space-evenly: distributes space evenly between the flex items with a full space at either end of the container*/
+  #box-container {
+    background: gray;
+    display: flex;
+    height: 500px;
+    justify-content: center;
+  }
+  #box-1 {
+    background-color: dodgerblue;
+    width: 25%;
+    height: 100%;
+  }
+
+  #box-2 {
+    background-color: orangered;
+    width: 25%;
+    height: 100%;
+  }
+</style>
+
+<div id="box-container">
+  <div id="box-1"></div>
+  <div id="box-2"></div>
+</div>

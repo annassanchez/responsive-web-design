@@ -1,0 +1,30 @@
+<style>
+  /*aling-elements properties are similar to justify-content. it aligns flex itmes along the croos axis, justify content was around the main axis.
+  -flex-start: alings elements at the start of the flex container. for rows: top of the container, for columns: left of the container.
+  -flex-end: alings elements at the end of the flex container. for rows: bottom of the container, for columns: right of the container.
+  -center: alings items to the center. for rows: this vertically aligns items; for columns: this horizontally aligns items.
+  -stretch: fill the flex container. rows are stretched top to bottom.
+  -baseline: align items to ther baselines. text concept, line where the letters sit on*/
+  #box-container {
+    background: gray;
+    display: flex;
+    height: 500px;
+    align-items: center;
+  }
+  #box-1 {
+    background-color: dodgerblue;
+    width: 200px;
+    font-size: 24px;
+  }
+
+  #box-2 {
+    background-color: orangered;
+    width: 200px;
+    font-size: 18px;
+  }
+</style>
+
+<div id="box-container">
+  <div id="box-1"><p>Hello</p></div>
+  <div id="box-2"><p>Goodbye</p></div>
+</div>
