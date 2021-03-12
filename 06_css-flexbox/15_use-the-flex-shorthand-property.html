@@ -1,0 +1,24 @@
+<style>
+  /*flex-grow, flex-shrink and flex-basis can all be set together by using the flex property. 
+  flex: 2 0 10px; will set flex-grow: 1, flex-shrink: 0, flex-basis: 10px;*/
+  #box-container {
+    display: flex;
+    height: 500px;
+  }
+  #box-1 {
+    background-color: dodgerblue;
+    flex: 2 2 150px;
+    height: 200px;
+  }
+
+  #box-2 {
+    background-color: orangered;
+    flex: 1 1 150px;
+    height: 200px;
+  }
+</style>
+
+<div id="box-container">
+  <div id="box-1"></div>
+  <div id="box-2"></div>
+</div>
